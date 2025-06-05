@@ -20,5 +20,5 @@ A simple Streamlit app using OpenAI GPT-3.5 to:
 git clone https://github.com/YOUR_USERNAME/health-chatbot.git
 cd health-chatbot
 pip install -r requirements.txt
-echo "OPENAI_API_KEY=sk-..." > .env
+echo "OPENAI_TOKEN=sk-..." > .env
 streamlit run app.py
