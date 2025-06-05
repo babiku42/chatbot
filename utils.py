@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()  # Load environment variables from .env file
 
 # Use your GitHub personal access token saved as env variable GITHUB_TOKEN
-token = os.getenv("GITHUB_TOKEN")
+token = os.getenv("OPENAI_TOKEN")
 if not token:
-    raise ValueError("GITHUB_TOKEN environment variable is not set.")
+    raise ValueError("OPENAI_TOKEN environment variable is not set.")
 
 # Custom GitHub OpenAI-compatible API endpoint and model name
 endpoint = "https://models.github.ai/inference"
