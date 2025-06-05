@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()  # Load environment variables from .env file
 
 # Use your GitHub personal access token saved as env variable GITHUB_TOKEN
-token = os.secrets["OPENAI_TOKEN"]
+token = os.getenv["OPENAI_TOKEN"]
 if not token:
     raise ValueError("OPENAI_TOKEN environment variable is not set.")
 
